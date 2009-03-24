@@ -1,0 +1,1 @@
+{$attribute.content|l10n(number)}

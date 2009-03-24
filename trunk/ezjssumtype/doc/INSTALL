@@ -1,0 +1,29 @@
+### Install ezjssumtype in extension folder
+ - Unpack extension in the extension folder of eZ Publish
+
+### Activate the extension
+
+- Either via the admin interface ( Setup | Extensions )
+
+- or via CLI:
+
+  edit the site.ini.append.php file in the override directory and add
+  in the [ExtensionSettings] block the line
+
+  ActiveExtensions[]=ezjssumtype
+
+### Rebuild autoload arrays
+
+- In the main eZ Publish directory, execute the php script
+  bin/php/ezpgenerateautoloads.php
+ 
+### Add Integer sum to your classes
+
+- In admin interface (Setup | Classes), edit your classes and add Integer sum attribute
+- Configure it, define the suffix of the attributes to add up
+
+### eZJSSumType need to connect to JQueryjs : http://jqueryjs.googlecode.com/files/jquery-1.2.6.pack.js
+You can edit template extension/ezjssumtype/design/standard/templates/content/datatype/edit/ezsum.tpl
+and update line 6 to change the URL to JQueryjs
+
+Thanks to Thyerry Langlois (thierry.langlois@newsweb.fr) for his help and the javascript trick
