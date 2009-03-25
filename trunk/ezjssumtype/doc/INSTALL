@@ -16,8 +16,8 @@
 
 - In the main eZ Publish directory, execute the php script
   bin/php/ezpgenerateautoloads.php
- 
-### Add Integer sum to your classes
+
+### Add attribute from Integer sum type to your classes
 
 - In admin interface (Setup | Classes), edit your classes and add Integer sum attribute
 - Configure it, define the suffix of the attributes to add up
